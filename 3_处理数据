@@ -1,0 +1,18 @@
+1）初始化赋值
+int n_int = INT_MAX
+或者
+int wrens(432)
+
+2)预处理:#define
+#define ZERO 0 
+等同于 const int ZERO = 0
+
+3)上溢和下溢
+有符号版本short 表示范围：-32768-32767
+无符号版本short（unsigned short XX） 表示范围0-65535
+如果超越了限制，其值将为另一端的取值
+
+4)强制转换类型
+将thorn的int值转换为long类型(不修改本身，而是创建一个新的、指定类型的值)
+(long)  thorn
+long  (thorn)
