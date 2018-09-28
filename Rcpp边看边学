@@ -1,0 +1,2 @@
+1）SEXP 
+R data types (SEXP) are matched to C++ objects （以类继承的方式）
