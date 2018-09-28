@@ -16,3 +16,8 @@ int wrens(432)
 将thorn的int值转换为long类型(不修改本身，而是创建一个新的、指定类型的值)
 (long)  thorn
 long  (thorn)
+
+5）typedef
+定义一种类型的别名
+定义与平台无关的类型
+为复杂的声明定义一个新的简单的别名
