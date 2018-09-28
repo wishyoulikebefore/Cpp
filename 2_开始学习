@@ -1,0 +1,20 @@
+1）C++范例
+注释：由//前缀指示
+
+预处理器编译指令：#include
+a) #include <iostream.h>    #带h后缀的头文件：从C中调用函数，使用全局命名空间
+b）#include <iostream>      #不带h后缀的头文件，未定义全局命名空间；C++标准程序库中的所有标识符都定义在一个名为std的namespace中
+   using namespace std;     #指出使用的namespace
+   
+函数头：int main(void)       #无输入参数，返回值为整数
+       void main(int)       #输入参数为整数值，无返回值
+
+函数体:{ 
+        statsment;
+        return 0;
+       }
+#输出：cout << strings;
+#输入：cin >> strings;
+#换行：endl或者\n
+
+结束main()函数的返回语句
