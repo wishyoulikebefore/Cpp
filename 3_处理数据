@@ -7,6 +7,8 @@ int wrens(432)
 #define ZERO 0 
 等同于 const int ZERO = 0
 
+#ifndef：避免某个头文件被多个文件同时引用引起的冲突
+
 3)上溢和下溢
 有符号版本short 表示范围：-32768-32767
 无符号版本short（unsigned short XX） 表示范围0-65535
