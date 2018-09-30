@@ -29,6 +29,7 @@ cin.getline() 和 cin.get()：会卡在换行符，需要配合cin.get()跳过�
 cin.getline(name,20) 读入到包含20个元素的name数组中
 
 3）string类
+#include <string>
 相比字符串可以自动调整大小
 相比数组可以将一个string对象赋给另一个string对象
 其他操作：strcat(char1,"juice") 添加字符串  strcpy(char1,char2) 复制
@@ -42,3 +43,6 @@ struct inflatable
   float volume;
   double price;
 }
+
+inflatable hat;
+使用成员操作符(.)访问各个成员
