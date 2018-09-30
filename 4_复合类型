@@ -1,1 +1,44 @@
-1）数组
+1. 数组
+数组声明应该指出以下3点：1）存储类型 2）数组名 3）数组中的元素数
+typeName arrayName[arraySize]
+short month[12]
+使用索引访问元素（从0开始）
+
+赋值
+1）单独赋值
+int yams[3];
+yams[0] = 7;
+2){}赋值
+iny yams[3] = {20,30,5};
+#如果只对数组部分赋值，其余将默认为0
+#如果初始化时[]内为空，编译器将自动计算元素个数：  short things[] = [1,5,3,8]   things数组包括4个元素
+#数组之间不能相互赋值
+
+2. 字符串
+C风格字符串有一种特殊的气质：以空字符（\0）结尾
+char fish[] = "Bubbles"
+#字符串拼接时，之间的\0会被取代
+
+1）字符串长度
+#include <cstring>
+sizeof：整个数组长度，包括\0
+strlen：只计算可见的字符
+
+2）字符串读取
+cin.getline() 和 cin.get()：会卡在换行符，需要配合cin.get()跳过换行符
+cin.getline(name,20) 读入到包含20个元素的name数组中
+
+3）string类
+相比字符串可以自动调整大小
+相比数组可以将一个string对象赋给另一个string对象
+其他操作：strcat(char1,"juice") 添加字符串  strcpy(char1,char2) 复制
+         strlen(char1) vs char1.size()
+         
+3. 结构
+比数组更灵活的数据格式，可以存储多种类型的数据
+struct inflatable
+{
+  char name[20];
+  float volume;
+  double price;
+}
