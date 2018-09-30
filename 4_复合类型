@@ -1,4 +1,4 @@
-1. 数组
+1. 数组：存储相同类型的数据
 数组声明应该指出以下3点：1）存储类型 2）数组名 3）数组中的元素数
 typeName arrayName[arraySize]
 short month[12]
@@ -35,14 +35,67 @@ cin.getline(name,20) 读入到包含20个元素的name数组中
 其他操作：strcat(char1,"juice") 添加字符串  strcpy(char1,char2) 复制
          strlen(char1) vs char1.size()
          
-3. 结构
-比数组更灵活的数据格式，可以存储多种类型的数据
+3. 结构（struct）：存储多种类型的数据
 struct inflatable
 {
   char name[20];
   float volume;
   double price;
-}
-
+};
 inflatable hat;
 使用成员操作符(.)访问各个成员
+
+1）还可以声明没有类型的结构变量
+struct
+{
+  int x;
+  int y;
+}position;
+创建一个名为position的结构变量
+
+2）结构数组
+inflatable gifts[100];    //array of 100 inflatable structures
+初始化结构数组
+inflatable guests[2] = 
+{
+  {"Bambi",0.5,21.99},
+  {"Godzilla",2000,565.99}
+};
+
+4. 共用体(union)：能储存多种数据类型，但只能同时存储其中的一种类型
+union id
+{
+  long id_num;
+  char id_char[20]
+} id_var;
+if (prize.type == 1)
+  cin >> id_val.id_num;
+else
+  cin >> id_val.id_char;
+  
+5. 指针和自由存储空间
+假设mainly是一个指针，mainly表示地址，*mainly表示存储在该地址处的值
+&操作符用来获得地址
+
+1)
+int *p_updates    #指向int的指针
+int *p1, p2      #创建p1指针和p2常规int变量
+----------------------------------------------
+int higgens = 5
+int *pt = &higgens    #pt为&higgens，*pt = 5
+
+2)使用new创建动态数组
+int *psome = new int [10]
+释放 del [] psome
+访问元素 psome[0] psome[2]
+
+6. 指针算术
+将指针变量+1后，增加的量等于它指向的类型字节数
+
+
+
+
+
+
+
+
