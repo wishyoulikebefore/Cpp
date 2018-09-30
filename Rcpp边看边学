@@ -1,2 +1,5 @@
 1）SEXP 
 R data types (SEXP) are matched to C++ objects （以类继承的方式）
+
+2）C++ vector.data()
+返回指向vector中第一个数据的指针或空vector之后的位置
