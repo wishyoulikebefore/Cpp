@@ -91,6 +91,9 @@ int *psome = new int [10]
 
 6. 指针算术
 将指针变量+1后，增加的量等于它指向的类型字节数
+double wages[3] = {10000.0,20000.0,30000.0};
+double *pw = wages;
+pw = pw + 1
 
 
 
