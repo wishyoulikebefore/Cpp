@@ -1,25 +1,25 @@
-1）初始化赋值
+1. 初始化赋值
 int n_int = INT_MAX
 或者
 int wrens(432)
 
-2)预处理:#define
+2. 预处理:#define
 #define ZERO 0 
 等同于 const int ZERO = 0
 
 #ifndef：避免某个头文件被多个文件同时引用引起的冲突
 
-3)上溢和下溢
+3. 上溢和下溢
 有符号版本short 表示范围：-32768-32767
 无符号版本short（unsigned short XX） 表示范围0-65535
 如果超越了限制，其值将为另一端的取值
 
-4)强制转换类型
+4. 强制转换类型
 将thorn的int值转换为long类型(不修改本身，而是创建一个新的、指定类型的值)
 (long)  thorn
 long  (thorn)
 
-5）typedef
+5. 自定义类型（typedef）
 定义一种类型的别名
 定义与平台无关的类型
 为复杂的声明定义一个新的简单的别名
