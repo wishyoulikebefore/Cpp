@@ -3,3 +3,16 @@ R data types (SEXP) are matched to C++ objects （以类继承的方式）
 
 2）C++ vector.data()
 返回指向vector中第一个数据的指针或空vector之后的位置
+
+3）std:pair
+pair是将2个数据组合成一个数据,两个数据可以是同一类型或者不同类型
+两个成员变量通过first和second来访问
+
+4）vector:动态大小数组
+vector<int> vec(10);   //类似数组定义int ia[10];
+vector的元素被初始化为与其类型相关的缺省值;还可以为每个元素提供一个显式的初始值来完成初始化 vector<int> vec(10,-1);
+
+赋值时可以将vector初始化为一个已有数组的全部或一部分，只需指定数组的开始地址以及数组最末元的下一位置来实现
+vector<int> vec(&ia[2],&ia[5]);  // 拷贝3个元素 ia[2], ia[3], ia[4] 
+vector可以被另一个vector初始化 或被赋给另一个vector
+
