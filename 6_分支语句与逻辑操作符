@@ -1,0 +1,23 @@
+1.	if语句
+if （test-condition）
+	statement
+
+2.	逻辑表达式
+OR操作符 ||
+AND操作符 &&
+NOT操作符 ！
+
+3.	?:操作符
+expression1 ? expression2 : expression3
+如果expression1为true，取expression2的值；否则取expression3的值
+
+4.	switch语句
+方便从大型列表中进行选择
+switch (integer-expression)
+{
+	case label1:  statament
+	case label2:  statement
+	…
+	default:  statement
+}
+#可以配合enum进行枚举
