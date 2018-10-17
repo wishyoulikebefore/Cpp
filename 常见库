@@ -1,0 +1,24 @@
+Eigen 用于matrix和vector
+#
+outerSize(): columns数目
+InnerIterator：循环非0值
+------------------------------------------------------------------
+套路代码
+（matrix）
+SparseMatrix<double> mat(rows,cols);
+for (int k=0; k<mat.outerSize(); ++k)
+  for (SparseMatrix<double>::InnerIterator it(mat,k); it; ++it)
+  {
+    it.value();
+    it.row();   // row index
+    it.col();   // col index (here it is equal to k)
+    it.index(); // inner index, here it is equal to it.row()
+  }
+(vector) 
+SparseVector<double> vec(size);
+for (SparseVector<double>::InnerIterator it(vec); it; ++it)
+{
+  it.value(); // == vec[ it.index() ]
+  it.index();
+}
+------------------------------------------------------------------
